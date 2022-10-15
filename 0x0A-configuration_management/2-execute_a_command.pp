@@ -1,6 +1,6 @@
 #add killme process
 
-exec { 'pkill -f killmenow':
+exec { 'pkill killmenow':
   path     => '/usr/bin',
   command  => 'pkill killmenow',
   provider => shell,
