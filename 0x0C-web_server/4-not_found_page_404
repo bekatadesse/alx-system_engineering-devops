@@ -2,15 +2,12 @@
 # Installs Nginx with the following configurations:
 #+    Listens on port 80.
 
-apt-get update
-apt-get install -y nginx
+sudo apt-get update
+sudo apt-get install -y nginx
 
-mkdir /etc/nginx/html
-touch /etc/nginx/html/index.html
-echo "Hello World" > /etc/nginx/html/index.html
-
-cd /etc/nginx/html/
-echo "Ceci n'est pas une page" > 404.html
+sudo mkdir /etc/nginx/html
+sudo touch /etc/nginx/html/index.html
+sudo echo "Hello World" > /etc/nginx/html/index.html
 
 printf %s "server {
     listen 80;
@@ -29,4 +26,4 @@ printf %s "server {
     }
 }" > /etc/nginx/sites-available/default
 
-service nginx restart
+sudo service nginx restart
