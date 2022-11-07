@@ -1,1 +1,5 @@
-
+#!/usr/bin/env bash
+# runs whoami command under user passed as arg1
+sudo -i -u "$1" bash << EOF
+whoami
+EOF
