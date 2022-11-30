@@ -6,7 +6,7 @@ import requests
 def number_of_subscribers(subreddit):
     """ this functiion returns the number of subscriber
     """
-    endpoint = f"https://www.reddit.com/r/{subreddit}/about.json"
+    endpoint = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     headers = {
         "User-Agent": "user one (by u/Known_Comb558)"
     }
