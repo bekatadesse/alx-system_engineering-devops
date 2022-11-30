@@ -7,9 +7,7 @@ def number_of_subscribers(subreddit):
     """ this functiion returns the number of subscriber
     """
     endpoint = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-    headers = {
-        "User-Agent": "user one (by u/Known_Comb558)"
-    }
+    headers = {"User-Agent": "user one (by u/Known_Comb558)"}
     params = {
         "limit": 10
     }
