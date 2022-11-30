@@ -5,7 +5,6 @@ import requests
 
 def number_of_subscribers(subreddit):
     """ this functiion returns the number of subscriber
-    <platform>:<app ID>:<version string> (by /u/<reddit username>)
     """
     endpoint = f"https://www.reddit.com/r/{subreddit}/about.json"
     headers = {
