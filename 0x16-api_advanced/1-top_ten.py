@@ -4,7 +4,7 @@
 import requests
 
 
-def number_of_subscribers(subreddit):
+def top_ten(subreddit):
     """ this functiion returns the number of subscriber
     """
     endpoint = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
