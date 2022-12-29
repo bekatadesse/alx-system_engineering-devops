@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 description "Gunicorn application server running AirBnB_clone_v4"
 
 
