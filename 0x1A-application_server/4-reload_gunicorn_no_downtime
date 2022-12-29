@@ -6,5 +6,5 @@
 pid=$(sudo systemctl show --propert MainPID gunicorn | cut -f 2 -d '=')
 if ps -f --pid "$pid" > /dev/null; then
 	sudo kill -HUP "$pid"
-	sudo systemctl restart gunicorn 
+	sudo service gunicorn restart  
 fi
